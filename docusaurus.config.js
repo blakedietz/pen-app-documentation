@@ -4,7 +4,7 @@ module.exports = {
   url: 'https://docs.pencyclopedia.ink',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
@@ -12,52 +12,23 @@ module.exports = {
       title: 'pencyclopedia.ink',
       logo: {
         alt: 'pencyclopedia.ink',
-        src: 'img/logo.svg',
+        src: 'img/favicon.svg',
       },
-      items: [
-        {
-          to: '/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
-        },
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
-      ],
+      items: [ ],
     },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Style Guide',
-              to: '/',
-            },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
-            },
-          ],
-        },
-        {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discord.gg/B46aEDT',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Reddit',
+              href: 'https://reddit.com/r/pencyclopedia',
             },
           ],
         },
@@ -65,17 +36,25 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: 'pencyclopedia.ink',
+              href: 'https://pencyclopedia.ink',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Backlog',
+              href: 'https://tree.taiga.io/project/bd-pencyclopedia/issues',
+            },
+            {
+              label: 'Blog',
+              href: 'https://blog.pencyclopedia.ink',
+            },
+            {
+              label: 'Changelog',
+              href: 'https://pencyclopedia.changelogfy.com/',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Cyberdeck LLC Built with Docusaurus.`,
     },
   },
   presets: [
@@ -84,9 +63,6 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
           routeBasePath: '/'
         },
         theme: {
